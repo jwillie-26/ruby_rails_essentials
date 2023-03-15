@@ -33,3 +33,8 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+
+
+if self.body && self.body.match(/(damn|curseword)/i)
+  errors.add(:body, "contains a curse word.")
+end
